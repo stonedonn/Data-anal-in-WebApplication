@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CORONA</title>
+<script>
+function changeImage(){
+    let sel=document.querySelector("#sel");
+    let img=document.querySelector("#img");
+    let index=sel.selectedIndex;
+    img.src=sel.options[index].value;
+    }
+</script>
+  <style>
+        html  {
+        overflow-y:scroll;
+        }
+        .div_3{
+            position: absolute;
+            background: black;
+            color:#FFFFFF;
+            height: 5000px;
+            width: 20%;
+            margin: 0;
+            padding: 0;
+        }
+
+       .div_2{
+        position: relative;
+        left: 430px;
+        top:330px;
+        resize: none;
+        border: 2px solid #000000;
+        overflow-y:auto;
+        overflow-x:hidden;
+        width:75%;
+        height:100%;
+        margin: 0;
+        padding: 0;
+        }
+      .div_1{
+         position:absolute;
+         padding-bottom: 0;
+         height:150px;
+      }
+      p{
+        text-align: center;
+      }
+      .hr_1 {
+        height: 10px;
+        background-color: red;
+      }
+      .img_1{
+        border: 5px solid black;
+        width: 300px;
+        height: 140px;
+        align: center;
+      }
+      .h1_1{
+        background: black;
+        color:#FFFFFF;
+        margin-block-start: 0;
+         margin-block-end: 0;
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        width: 100vw;
+        height: 20vh;
+        background:white;
+      }
+      .box{
+      		box-sizing: border-box;
+      		height: 10%;
+      		float: right;
+      		width: 5%;
+      		background:black;
+      		color:white;
+      		}
+
+		#box1 {
+			width: 20%;
+			height: 80px;
+
+		}
+		#box2 {
+			height: 80px;
+			width: 20%;
+
+		}
+
+		#box3 {
+			width: 20%;
+			height: 80px;
+
+		}
+		#box4 {
+			width: 20%;
+			height: 80px;
+
+		}
+
+		.reg {
+			font-size: 14px;
+			width: 50px;
+
+			font-weight: bold;
+			float: left;
+			text-align: center;
+			margin-right: 10px;
+		}
+
+		form ul li {
+			list-style: none;
+			margin: 15px 0;
+			font-size: 14px;
+		}
+
+
+.ul_1 { /* 여기 수직네비게이션바 설정 */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color:#020202;
+  position: fixed;
+  height: 75%;
+  overflow: auto;
+}
+
+.h3_1{
+    margin: 0;
+}
+
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #555;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+</style>
+
+</head>
+<body>
+  <body>
+  {% load static %}
+  <div class="div_1">
+<hr class="hr_1">
+<div class="container">
+    <p><a href="http://localhost:8080/noticeboard/main.html"><button type="button" class="btm_image" id="img_btn"><img class="img_1" src={% static "media/headline.png" %}></button></p>
+</div>
+<hr class="hr_1">
+<h1 class="h1_1">CoronaBoard</h1>
+<div class="div_3">
+<ul class="ul_1">
+  <li><a class="current" href="pm10"><span style="color:#FFFFFF">미세먼지</span></a>
+        <ul>
+            <li><a href="pm10"><span style="color:#FFFFFF">미세먼지</span></a>
+            <li><a href="pm25"><span style="color:#FFFFFF">초미세먼지</span></a>
+            <li><a href="dust10_yearly"><span style="color:#FFFFFF">년도별 미세먼지 비교</span></a>
+            <li><a href="dust25_yearly"><span style="color:#FFFFFF">년도별 초미세먼지 비교</span></a>
+        </ul>
+  </li>   <!-- 현재 메뉴 위치표시 -->
+  <li><a href="tmp"><span style="color:#FFFFFF">기온</span></a></li>
+    <li><a href="corona"><span style="color:#FFFFFF">코로나</span></a>
+        <ul>
+            <li><a href="corona"><span style="color:#FFFFFF">지역,월별 코로나 확진자</span></a>
+            <li><a href="correlation_dust10"><span style="color:#FFFFFF">코로나와 미세먼지의 상관관계</span></a>
+            <li><a href="correlation_dust25"><span style="color:#FFFFFF">코로나와 초미세먼지의 상관관계</span></a>
+            <li><a href="correlation_tmp"><span style="color:#FFFFFF">코로나와 기온의 상관관계</span></a>
+        </ul>
+    </li>
+</ul>
+</div>
+</div>
+
+
+<div class="div_2">
+      <br>&nbsp;&nbsp;&nbsp;<b>지역:</b>&nbsp;&nbsp;&nbsp;<select id="sel", onchange="changeImage()">
+        <option value={% static "media1/busan_s.png" %}>부산</option>
+        <option value={% static "media1/chungbuk_s.png" %}>충북</option>
+        <option value={% static "media1/chungnam_s.png" %}>충남</option>
+        <option value={% static "media1/daegu_S.png" %}>대구</option>
+        <option value={% static "media1/daejeon_s.png" %}>대전</option>
+        <option value={% static "media1/lightzu_s.png" %}>광주</option>
+        <option value={% static "media1/incheon_s.png" %}>인천</option>
+        <option value={% static "media1/jeju_s.png" %}>제주</option>
+        <option value={% static "media1/jeonbuk_s.png" %}>전북</option>
+        <option value={% static "media1/jeonnam_s.png" %}>전남</option>
+        <option value={% static "media1/gangwon_s.png" %}>강원</option>
+        <option value={% static "media1/gyeongbuk_S.png" %}>경북</option>
+        <option value={% static "media1/gyeongnam_S.png" %}>경남</option>
+        <option value={% static "media1/gyeonggi_s.png "%}>경기</option>
+        <option value={% static "media1/sejong_s.png" %}>세종</option>
+        <option value={% static "media1/seoul_s.png" %}>서울</option>
+        <option value={% static "media1/ulsan_s.png" %}>울산</option> <!--일일 확진자와 기온의 상관관계-->
+    </select>
+<div>
+    <p><img id="img" src={% static 'media1/busan_s.png' %} alt="My image"></p>
+</div>
+
+
+
+</body>
+</html>
