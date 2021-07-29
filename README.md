@@ -7,3 +7,7 @@
 
 
 ## 초기 Intro 화면
+![인트로](https://user-images.githubusercontent.com/46741844/127413535-a4bc1560-2781-4b7f-a6b7-ceef5397b60a.PNG)
+> 워딩클라우드로 이루어진 이미지를 클릭하면 Main 화면으로 넘어갑니다.
+
+## Main 화면
