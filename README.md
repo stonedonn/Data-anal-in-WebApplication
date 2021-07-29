@@ -31,5 +31,6 @@
 ![데이터6](https://user-images.githubusercontent.com/46741844/127415719-4ed56e95-89eb-43f3-8cd6-fe1e35baed63.PNG)
 > 최종적으로 데이터를 전처리하여 지역 월별로 csv파일로 저장했습니다.
 ***
-
+### 데이터 시각화
+![폴리움](https://user-images.githubusercontent.com/46741844/127418506-3ac8804c-c662-4443-9c49-8bd7bb7145b9.png)
 
