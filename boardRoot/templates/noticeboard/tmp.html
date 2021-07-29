@@ -2,194 +2,166 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CORONA</title>
-<script>
-function changeImage(){
-    let sel=document.querySelector("#sel");
-    let img=document.querySelector("#img");
-    let index=sel.selectedIndex;
-    img.src=sel.options[index].value;
-    }
-</script>
+    <title>코로나가 먼지!</title>
   <style>
-        html  {
-        overflow-y:scroll;
-        }
-        .div_3{
-            position: absolute;
-            background: black;
-            color:#FFFFFF;
-            height: 5000px;
-            width: 20%;
-            margin: 0;
-            padding: 0;
-        }
+    @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Nanum+Brush+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap');
 
-       .div_2{
-        position: relative;
-        left: 430px;
-        top:330px;
-        resize: none;
-        border: 2px solid #000000;
-        overflow-y:auto;
-        overflow-x:hidden;
-        width:75%;
-        height:100%;
-        margin: 0;
-        padding: 0;
-        }
-      .div_1{
-         position:absolute;
-         padding-bottom: 0;
-         height:150px;
-      }
-      p{
-        text-align: center;
-      }
-      .hr_1 {
-        height: 10px;
-        background-color: red;
-      }
-      .img_1{
-        border: 5px solid black;
-        width: 300px;
-        height: 140px;
-        align: center;
-      }
-      .h1_1{
-        background: black;
-        color:#FFFFFF;
-        margin-block-start: 0;
-         margin-block-end: 0;
-      }
-      body {
-        margin: 0;
-      }
-      .container {
-        width: 100vw;
-        height: 20vh;
-        background:white;
-      }
-      .box{
-      		box-sizing: border-box;
-      		height: 10%;
-      		float: right;
-      		width: 5%;
-      		background:black;
-      		color:white;
-      		}
-
-		#box1 {
-			width: 20%;
-			height: 80px;
-
-		}
-		#box2 {
-			height: 80px;
-			width: 20%;
-
-		}
-
-		#box3 {
-			width: 20%;
-			height: 80px;
-
-		}
-		#box4 {
-			width: 20%;
-			height: 80px;
-
-		}
-
-		.reg {
-			font-size: 14px;
-			width: 50px;
-
-			font-weight: bold;
-			float: left;
-			text-align: center;
-			margin-right: 10px;
-		}
-
-		form ul li {
-			list-style: none;
-			margin: 15px 0;
-			font-size: 14px;
-		}
-
-
-.ul_1 { /* 여기 수직네비게이션바 설정 */
-  list-style-type: none;
+body {
   margin: 0;
   padding: 0;
-  width: 20%;
-  background-color:#020202;
-  position: fixed;
-  height: 75%;
-  overflow: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
-
-.h3_1{
-    margin: 0;
+h1 {
+  margin: 2em 0 1.5em 0;
 }
-
-
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
+header {
 }
-
+div_01{
+float:right;
+}
+div_02 {
+float:left;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+   background: #B62A51;
+  float: right;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 li a.active {
   background-color: #555;
   color: white;
+  text-decoration:none;
 }
+#main-menu > li {
+  float: left;
+  position: relative;
+  font-family: 'Nanum Gothic';
+}
+#main-menu > li > a {
+  font-size: 1.5rem;
+  color: rgba(255,255,255,0.85);
+  text-align: left;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: block;
+  padding: 5px 90px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+#main-menu > li:nth-child(1) > a {
+}
+#sub-menu {
+  position: absolute;
+  background: #020202;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease-in;
+  font-color: #FDFCFC
+}
+#sub-menu > li {
+  padding: 10px 25px;
+  border-bottom: 0px solid rgba(0,0,0,0.15);
+}
+#sub-menu > li >  a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+#sub-menu > li > hover a{
+ text-decoration: none;
+   background:#777777;
+  font-color: #FEFEFE;
+  font-size:0.5em;
+}
+#main-menu > li:hover #sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+section {
+}
+     .container { margin: 0; padding: 32px; width: 1024px; }
+     .sec { margin-top: 16px; }
+     .sec:first-child { margin-top: 0; }
+     .title { font-size: 18px; font-weight: 700; }
+     .content { margin-top: 8px; }
+     .list-box { display: flex; border: 1px solid #aaa; }
+     .list-box .list-item { width: 50%; }
+     .list-box .list-item:first-child { margin-right: 8px; }
+     .list-item dt { padding: 8px 16px; font-weight: 700; color: #888; background-color: #ddd; width: 990px }
+     .list-item dd { margin: 0; }
+     .list-item iframe { padding: 0 8px; width: 100%; height: 400px; box-sizing: border-box; }
+     .list-box2 { display: flex; border: 1px solid #aaa; }
+     .list-box2 .list-item:first-child { margin-right: 8px; }
+     .list-item dt { padding: 8px 16px; font-weight: 700; color: #888; background-color: #ddd; width: 990px }
+     .list-item dd { margin: 0; }
+     .list-item img { padding: 34px; width:168%; margin-left: 20px; margin-top: 0; padding-top: 0; padding-bottom: 0;}
 
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
+
+    table{
+    border:2px solid black;
+    border-collapse: collapse;
+    width: 1024px;
+    }
+    th{
+        background-color: #E5E5E5;
+        font-weight:bold;
+    }
+    th,td{
+        border:1px solid gray;
+        padding:5px;
+        text-align: center;
+    }
 
 </style>
-
 </head>
-<body>
-  <body>
-  {% load static %}
-  <div class="div_1">
-<hr class="hr_1">
-<div class="container">
-    <p><a href="http://localhost:8080/noticeboard/main.html"><button type="button" class="btm_image" id="img_btn"><img class="img_1" src={% static "media/headline.png" %}></button></p>
-</div>
-<hr class="hr_1">
-<h1 class="h1_1">CoronaBoard</h1>
-<div class="div_3">
-<ul class="ul_1">
-  <li><a class="current" href="pm10"><span style="color:#FFFFFF">미세먼지</span></a>
-        <ul>
-            <li><a href="pm10"><span style="color:#FFFFFF">미세먼지</span></a>
-            <li><a href="pm25"><span style="color:#FFFFFF">초미세먼지</span></a>
-            <li><a href="dust10_yearly"><span style="color:#FFFFFF">년도별 미세먼지 비교</span></a>
-            <li><a href="dust25_yearly"><span style="color:#FFFFFF">년도별 초미세먼지 비교</span></a>
-        </ul>
-  </li>   <!-- 현재 메뉴 위치표시 -->
-  <li><a href="tmp"><span style="color:#FFFFFF">기온</span></a></li>
-    <li><a href="corona"><span style="color:#FFFFFF">코로나</span></a>
-        <ul>
-            <li><a href="corona"><span style="color:#FFFFFF">지역,월별 코로나 확진자</span></a>
-            <li><a href="correlation_dust10"><span style="color:#FFFFFF">코로나와 미세먼지의 상관관계</span></a>
-            <li><a href="correlation_dust25"><span style="color:#FFFFFF">코로나와 초미세먼지의 상관관계</span></a>
-            <li><a href="correlation_tmp"><span style="color:#FFFFFF">코로나와 기온의 상관관계</span></a>
-        </ul>
+<body bgcolor="#EFDED4">
+{% load static %}
+<div class="div_01" float="right" ><img src={% static "media/mask.jpg" %} margin-right: 0px; width="900" height="200" ></div>
+<header style="left: 0px; width: 450px; bottom: 430px; font-size: 1.8em; font-weight: bold; position: absolute;">
+</header>
+<nav role="navigation">
+  <ul id="main-menu">
+<li><a href="{% url 'noticeboard:intro' %}"><b style= font-family:'Sunflower';>코로나가 뭔지</b></a>
+    <li><a href="{% url 'noticeboard:pm10' %}">미세먼지</a>
+      <ul id="sub-menu">
+        <li><a  href="{% url 'noticeboard:pm10' %}" aria-label="subemnu" >미세먼지</a></li>
+        <li><a href="{% url 'noticeboard:pm25' %}" aria-label="subemnu">초미세먼지</a></li>
+        <li><a href="{% url 'noticeboard:dust10_yearly' %}" aria-label="subemnu">년도별 미세먼지 비교</a></li>
+        <li><a href="{% url 'noticeboard:dust25_yearly' %}" aria-label="subemnu">년도별 초미세먼지 비교</a></li>
+      </ul>
     </li>
-</ul>
-</div>
-</div>
-
-
-<div class="div_2">
-      <br>&nbsp;&nbsp;&nbsp;<b>지역:</b>&nbsp;&nbsp;&nbsp;<select id="sel", onchange="changeImage()">
+    <li><a href="{% url 'noticeboard:tmp' %}">기온</a>
+    </li>
+    <li><a href="{% url 'noticeboard:covid' %}">코로나</a>
+      <ul id="sub-menu">
+        <li><a href="{% url 'noticeboard:corona' %}" aria-label="subemnu">지역,월별 코로나 확진자</a></li>
+        <li><a href="{% url 'noticeboard:correlation_dust10' %}" aria-label="subemnu">코로나와 미세먼지의 상관관계</a></li>
+        <li><a href="{% url 'noticeboard:correlation_dust25' %}" aria-label="subemnu">코로나와 초미세먼지의 상관관계</a></li>
+        <li><a href="{% url 'noticeboard:correlation_tmp' %}" aria-label="subemnu">코로나와 기온의 상관관계</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    <main class="container">
+        <section class="sec">
+            <div class="contents">
+                <dl class="list-box">
+                    <div class="list-item">
+                        <dt>지역별, 월별 평균기온</dt>
+                                      <br>&nbsp;&nbsp;&nbsp;<b>지역:</b>&nbsp;&nbsp;&nbsp;<select id="sel", onchange="changeImage()">
         <option value={% static "media2/busan.png" %}>부산</option>
         <option value={% static "media2/chungbuk.png" %}>충북</option>
         <option value={% static "media2/chungnam.png" %}>충남</option>
@@ -200,9 +172,9 @@ li a:hover:not(.active) {
         <option value={% static "media2/jeju.png" %}>제주</option>
         <option value={% static "media2/jeonbuk.png" %}>전북</option>
         <option value={% static "media2/jeonnam.png" %}>전남</option>
-        <option value={% static "media2/gwangwon.png" %}>강원</option>
-        <option value={% static "media2/gyeongbuk.png" %}>경북</option>
-        <option value={% static "media2/gyeongnam.png" %}>경남</option>
+        <option value={% static "media2/gwanwon.png" %}>강원</option>
+        <option value={% static "media2/gyoungbuk.png" %}>경북</option>
+        <option value={% static "media2/gyoungnam.png" %}>경남</option>
         <option value={% static "media2/gyoungki.png "%}>경기</option>
         <option value={% static "media2/sejong.png" %}>세종</option>
         <option value={% static "media2/seoul.png" %}>서울</option>
@@ -211,5 +183,79 @@ li a:hover:not(.active) {
 <div>
     <p><img id="img" src={% static 'media2/busan.png' %} alt="My image"></p>
 </div>
+
+            </div>
+            </dl>
+            </div>
+        </section>
+    <div>
+        <table border="0"bordercolor="#535195" width ="500" height="300" align = "left">
+            <th>날짜</th><th>부산</th><th>충북</th><th>충남</th><th>대구</th><th>대전</th><th>강원</th><th>경북</th><th>경기</th><th>경남</th><th>인천</th><th>제주</th><th>전북</th><th>전남</th><th>광주</th><th>세종</th><th>서울</th><th>울산</th></tr>
+       <tr><!-- 첫번째 줄 시작 -->
+            <td>2020-02</td><td>7.0</td><td>3.0</td><td>4.0</td><td>5.0</td><td>5.0</td><td>4.0</td><td>5.0</td><td>2.0</td><td>6.0</td><td>4.0</td><td>10.0</td><td>5.0</td><td>2.0</td><td>6.0</td><td>4.0</td><td>4.0</td><td>6.0</td>
+        </tr>
+       <tr>
+           <td>2020-03</td><td>10.0</td><td>7.0</td><td>7.0</td><td>9.0</td><td>8.0</td><td>8.0</td><td>8.0</td><td>7.0</td><td>9.0</td><td>7.0</td><td>12.0</td><td>8.0</td><td>7.0</td><td>9.0</td><td>8.0</td><td>8.0</td><td>10.0</td>
+       </tr>
+         <tr>
+           <td>2020-04</td><td>13.0</td><td>10.0</td><td>10.0</td><td>13.0</td><td>12.0</td><td>11.0</td><td>12.0</td><td>10.0</td><td>12.0</td><td>10.0</td><td>14.0</td><td>10.0</td><td>10.0</td><td>11.0</td><td>11.0</td><td>11.0</td><td>12.0</td>
+       </tr>
+             <tr>
+           <td>2020-05</td><td>18.0</td><td>18.0</td><td>17.0</td><td>19.0</td><td>19.0</td><td>18.0</td><td>18.0</td><td>17.0</td><td>18.0</td><td>17.0</td><td>19.0</td><td>18.0</td><td>17.0</td><td>19.0</td><td>18.0</td><td>18.0</td><td>18.0</td>
+       </tr>
+    <tr>
+           <td>2020-06</td><td>22.0</td><td>23.0</td><td>22.0</td><td>24.0</td><td>24.0</td><td>23.0</td><td>23.0</td><td>23.0</td><td>23.0</td><td>22.0</td><td>22.0</td><td>23.0</td><td>23.0</td><td>24.0</td><td>23.0</td><td>24.0</td><td>23.0</td>
+       </tr>
+    <tr>
+           <td>2020-07</td><td>22.0</td><td>23.0</td><td>23.0</td><td>23.0</td><td>24.0</td><td>23.0</td><td>22.0</td><td>23.0</td><td>22.0</td><td>23.0</td><td>24.0</td><td>23.0</td><td>23.0</td><td>23.0</td><td>23.0</td><td>24.0</td><td>22.0</td>
+       </tr>
+    <tr>
+           <td>2020-08</td><td>27.0</td><td>26.0</td><td>26.0</td><td>29.0</td><td>28.0</td><td>26.0</td><td>27.0</td><td>25.0</td><td>27.0</td><td>26.0</td><td>28.0</td><td>27.0</td><td>25.0</td><td>28.0</td><td>27.0</td><td>27.0</td><td>28.0</td>
+       </tr>
+    <tr>
+           <td>2020-09</td><td>22.0</td><td>19.0</td><td>20.0</td><td>21.0</td><td>21.0</td><td>20.0</td><td>20.0</td><td>20.0</td><td>21.0</td><td>21.0</td><td>23.0</td><td>21.0</td><td>20.0</td><td>21.0</td><td>21.0</td><td>21.0</td><td>21.0</td>
+       </tr>
+    <tr>
+           <td>2020-10</td><td>17.0</td><td>12.0</td><td>13.0</td><td>15.0</td><td>14.0</td><td>13.0</td><td>14.0</td><td>12.0</td><td>15.0</td><td>15.0</td><td>18.0</td><td>14.0</td><td>12.0</td><td>16.0</td><td>13.0</td><td>14.0</td><td>16.0</td>
+       </tr>
+    <tr>
+           <td>2020-11</td><td>12.0</td><td>7.0</td><td>8.0</td><td>10.0</td><td>9.0</td><td>8.0</td><td>9.0</td><td>6.0</td><td>10.0</td><td>8.0</td><td>15.0</td><td>9.0</td><td>6.0</td><td>11.0</td><td>8.0</td><td>8.0</td><td>11.0</td>
+       </tr>
+    <tr>
+           <td>2020-12</td><td>4.0</td><td>-2.0</td><td>-0.0</td><td>2.0</td><td>0.0</td><td>-0.0</td><td>1.0</td><td>-2.0</td><td>2.0</td><td>0.0</td><td>8.0</td><td>2.0</td><td>-2.0</td><td>3.0</td><td>-0.0</td><td>-0.0</td><td>3.0</td>
+       </tr>
+    <tr>
+           <td>2021-01</td><td>3.0</td><td>-3.0</td><td>-2.0</td><td>0.0</td><td>-1.0</td><td>-2.0</td><td>-1.0</td><td>-4.0</td><td>1.0</td><td>-2.0</td><td>7.0</td><td>0.0</td><td>2.0</td><td>1.0</td><td>-2.0</td><td>-2.0</td><td>2.0</td>
+       </tr>
+    <tr>
+           <td>2021-02</td><td>7.0</td><td>2.0</td><td>3.0</td><td>5.0</td><td>4.0</td><td>3.0</td><td>4.0</td><td>2.0</td><td>5.0</td><td>2.0</td><td>9.0</td><td>4.0</td><td>5.0</td><td>5.0</td><td>3.0</td><td>3.0</td><td>7.0
+    </td>
+       </tr>
+    <tr>
+           <td>2021-03</td><td>11.0</td><td>8.0</td><td>8.0</td><td>10.0</td><td>10.0</td><td>8.0</td><td>9.0</td><td>8.0</td><td>10.0</td><td>8.0</td><td>12.0</td><td>9.0</td><td>10.0</td><td>11.0</td><td>9.0</td><td>9.0</td><td>10.0
+    </td>
+       </tr>
+     <tr>
+           <td>2021-04</td><td>15.0</td><td>13.0</td><td>13.0</td><td>15.0</td><td>15.0</td><td>13.0</td><td>13.0</td><td>13.0</td><td>14.0</td><td>13.0</td><td>15.0</td><td>14.0</td><td>14.0</td><td>15.0</td><td>14.0</td><td>14.0</td><td>14.0</td>
+       </tr>
+     <tr>
+           <td>2021-05</td><td>18.0</td><td>16.0</td><td>16.0</td><td>18.0</td><td>18.0</td><td>17.0</td><td>17.0</td><td>16.0</td><td>18.0</td><td>16.0</td><td>19.0</td><td>17.0</td><td>18.0</td><td>18.0</td><td>17.0</td><td>17.0</td><td>18.0</td>
+       </tr>
+     <tr>
+           <td>2021-06</td><td>22.0</td><td>22.0</td><td>22.0</td><td>23.0</td><td>24.0</td><td>21.0</td><td>22.0</td><td>22.0</td><td>22.0</td><td>22.0</td><td>23.0</td><td>23.0</td><td>22.0</td><td>23.0</td><td>23.0</td><td>23.0</td><td>22.0</td>
+       </tr>
+        </table>
+    </div>
+
+        </main>
+    </div>
+    <script>
+    function changeImage(){
+        let sel=document.querySelector("#sel");
+        let img=document.querySelector("#img");
+        let index=sel.selectedIndex;
+        img.src=sel.options[index].value;
+        }
+    </script>
 </body>
 </html>

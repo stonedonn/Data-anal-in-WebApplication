@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>코로나가 먼지!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Nanum+Brush+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Nanum+Brush+Script&family=Nanum+Gothic&display=swap');
+
+    .list-item img {
+    width: 1093px;
+    display: inline-block;
+    margin: 110px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 440px;
+    height: 454px;}
+
+    .div_01 img {
+    margin: 200px;
+    margin-top: -85px;
+    margin-left: 534px;
+    margin-bottom: 0;
+    }
+
+</style>
+</head>
+<body bgcolor="#EFDED4">
+{% load static %}
+
+    <main class="container">
+            <div class="contents">
+                <dl class="list-box">
+                    <div class="list-item">
+                        <a href="{% url 'noticeboard:covid' %}" /><img src={% static "main/000picture.jpg" %} />
+                    </div>
+
+                </dl>
+            </div>
+        <div class="div_01" float="right" ><img src={% static "media/mask.jpg" %} margin-right: 0px; width="900" height="200" ></div>
+
+    </main>
+</body>
+</html>

@@ -4,6 +4,13 @@ from django.shortcuts import render, get_object_or_404
 # 그 결과를 템플릿에 보내준다. 데이터는 가공하는 처리를 해야한다 싶으면 뷰에서 함수를
 # 작성하면 된다.
 
+def intro(request):
+    #장고의 ORM 투입!
+    #writeDate로 sort해서 가져오기 최신글
+
+    return render(request, 'noticeboard/intro.html')
+    #사용자에게 두번째에 있는 html를 세번째에 있는 context를 가져와 rendering해줌
+
 def main(request):
     #장고의 ORM 투입!
     #writeDate로 sort해서 가져오기 최신글

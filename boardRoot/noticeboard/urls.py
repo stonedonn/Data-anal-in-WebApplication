@@ -4,7 +4,8 @@ from . import views  # noticeboard의 views를 임포트한다
 # URLconf라고 한다.path()함수 이용
 app_name = 'noticeboard' #일종의 도메인 생성
 urlpatterns = [
-    path('', views.main, name='main'),
+    path('', views.intro, name='intro'),
+    path('covid', views.main, name='covid'),
     path('corona',views.corona, name='corona'),
     path('correlation_tmp',views.correlation_tmp, name='correlation_tmp'),
     path('tmp',views.tmp, name='tmp'),
