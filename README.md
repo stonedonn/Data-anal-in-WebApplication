@@ -15,4 +15,21 @@
 
 
 ***
-## 데이터 전처리 및 시각화
+## 데이터 전처리 및 시각화 예시
+> Excel파일을 csv파일로 변환 후에 원하는 시각화를 위해 데이터프레임을 전처리 해주었습니다.
+
+
+![데이터1](https://user-images.githubusercontent.com/46741844/127415694-90c23565-0878-4a49-9d6e-276ecd463f2a.PNG)
+> 초기 데이터프레임 
+***
+![데이터3](https://user-images.githubusercontent.com/46741844/127415710-5f6db527-ab98-4411-8131-d5343c4256dd.PNG)
+> 누적확진자와 누적사망자에서 diff함수를 이용하여 일별확진자와 사망자를 뽑아냈습니다.
+***
+![데이터5](https://user-images.githubusercontent.com/46741844/127415717-a9bb5099-84c0-4e9d-90bc-f5590fccdf06.PNG)
+> 일별확진자와 사망자를 이용해 사망률(치명률)을 뽑아낸뒤
+***
+![데이터6](https://user-images.githubusercontent.com/46741844/127415719-4ed56e95-89eb-43f3-8cd6-fe1e35baed63.PNG)
+> 최종적으로 데이터를 전처리하여 지역 월별로 csv파일로 저장했습니다.
+***
+### Folium과 matplotlib
+
