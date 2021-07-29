@@ -1,4 +1,3 @@
-# Data-anal-in-WebApplication
 # 코로나가 먼지!
 미세먼지,기온과 코로나 사망률은 상관관계가 있는지 데이터 분석 및 시각화를 진행한 뒤 Django를 이용해 웹페이지에 뿌려줍니다.
 
@@ -13,3 +12,7 @@
 ## Main 화면
 ![127 0 0 1_8000_noticeboard_covid](https://user-images.githubusercontent.com/46741844/127414774-074977be-0331-4144-98ad-10daa253a428.png)
 > 각각의 메뉴바에서 시각화한 데이터들을 확인할 수 있습니다.
+
+
+***
+## 데이터 전처리 및 시각화
