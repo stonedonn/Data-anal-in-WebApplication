@@ -33,4 +33,10 @@
 ***
 ### 데이터 시각화
 ![폴리움](https://user-images.githubusercontent.com/46741844/127418506-3ac8804c-c662-4443-9c49-8bd7bb7145b9.png)
-
+***
+![sejong](https://user-images.githubusercontent.com/46741844/127418637-2374cd12-9ae5-450f-aa90-e1ea6d6c7eab.png)
+***
+### Django 시스템 구조도
+![시스템구조도](https://user-images.githubusercontent.com/46741844/127418500-e7483107-8984-42fd-a93c-7f16ebad6aa9.png)
+> Model 부분에 데이터를 저장하지 않았기 때문에 연결만 한 뒤 사용하지 않았습니다.
+***
