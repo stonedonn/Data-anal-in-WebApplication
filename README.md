@@ -11,3 +11,5 @@
 > 워딩클라우드로 이루어진 이미지를 클릭하면 Main 화면으로 넘어갑니다.
 
 ## Main 화면
+![127 0 0 1_8000_noticeboard_covid](https://user-images.githubusercontent.com/46741844/127414774-074977be-0331-4144-98ad-10daa253a428.png)
+> 각각의 메뉴바에서 시각화한 데이터들을 확인할 수 있습니다.
